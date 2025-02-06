@@ -109,3 +109,4 @@ if (coursesAndDurationArray[5].monthDuration>5){
 
 
 
+
