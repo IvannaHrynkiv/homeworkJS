@@ -1,25 +1,22 @@
-let area = (a,b) => a * b;
+let area = (a,b) => (console.log(a * b), a * b);
 
-let roundSquare = (radius) => Math.PI * radius * radius;
+let roundSquare = radius => Math.PI * radius * radius;
 
 let areaCilinder = (radius, height) => 2*Math.PI*radius*height;
-
 
 let element = (array) => {
     array.forEach(item => console.log(item));
 }
 
-let createsP = (text)=> {
-    let p = `<p> ${text} </p>`;
+let createsP = text=> {
+    document.write(`<p> ${text} </p>`);
 }
 
-let createsUl = (texts) => {
-    (`<ul>
+let createsUl = texts => document.write(`<ul>
 <li>${texts}</li>
 <li>${texts}</li>
 <li>${texts}</li>
 </ul>`);
-}
 
 let creatingElements = (counter, text) => {
     document.write('<ul>');
@@ -34,8 +31,6 @@ let accepts = (array) => {
     array.forEach(item => document.write(`<li>${item}</li>`));
     document.write(`</ul>`);
 }
-
-
 
 let acceptsUsers = (users) => {
     users.forEach(user => {
